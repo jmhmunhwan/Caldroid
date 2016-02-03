@@ -245,17 +245,7 @@ public class CaldroidGridAdapter extends BaseAdapter {
 
             // Set it
             if (backgroundResource != null) {
-                try
-                {
-                    String tmp = this.context.getResources().getResourceName(backgroundResource);
-                    // have resource
-                    backgroundView.setBackgroundResource(backgroundResource);
-                }
-                catch(Resources.NotFoundException e)
-                {
-                    // doesn't have resource, use like color
-                    backgroundView.setBackgroundColor(backgroundResource);
-                }
+                backgroundView.setBackgroundResource(backgroundResource);
             }
         }
 
